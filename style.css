@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: anime;
+    background-size: cover;
+    background-position: center;
+    animation: anime 18s infinite;
+}
+/* main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: anime 18s infinite;
+   } */
+   
+   @keyframes anime {
+     0% {
+       background-image: url('img/1_Sean_Sweeney_Snow_Beauty.jpg');
+    }
+     33% {
+       background-image: url('img/4_Rui_Palha_Pigeons_at_Bolhao.jpg');
+    }
+     66% {
+       background-image: url('img/4_Rui_Palha_Pigeons_at_Bolhao.jpg');
+    }
+     100% {
+       background-image: url('img/2_ines_maria_wingsofvienna.jpg');
+    }
+   }
+   
+.header{
+    background-color: rgba(128, 128, 128, 0.253)(128, 128, 128, 0.253)(128, 128, 128, 0.342);
+}
+nav{
+border: 2px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+form input{
+    width: 900px;
+    height: 30px;
+}
+form img{
+    position: absolute;
+    left: 260px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+ul .log{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding: 7px 10px 7px 10px;
+    border-radius: 3px;
+}
+ul .sign{
+    background-color: white;
+    color: black;
+    padding: 7px 10px 7px 10px;
+    border-radius: 3px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.hero h1{
+    margin-bottom: 20px;
+    
+}
+.hero p{
+    width: 400px;
+    margin-bottom: 29px;
+}
+
+
+
+
+.btn{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 19px 14px 19px ;
+    border: none;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:765px){
+    html,body{
+        overflow: hidden;
+    }
+    nav form{
+        display: none;
+    }
+}
